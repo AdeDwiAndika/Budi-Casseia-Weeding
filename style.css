@@ -1,0 +1,338 @@
+:root {
+  --hijau: #798c72;
+  --bg: #0a0a0a;
+  --shadow: 0px 5px 6px rgba(0, 0, 0, 0.1);
+  --font: white;
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/bg.webp);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  font-size: 1.6rem;
+}
+
+.hero h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 6rem;
+  text-shadow: var(--shadow);
+  color: var(--hijau);
+}
+
+.hero p {
+  font-size: 1.4rem;
+  color: #252525;
+  padding: 15px;
+}
+
+.hero a {
+  color: white;
+  background-color: var(--hijau);
+  box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+  background-color: white;
+  color: var(--hijau);
+}
+
+.frame img {
+  width: 350px;
+}
+
+.simply-countdown > .simply-section {
+  background-color: #ffffff;
+  border: 2px solid var(--hijau);
+  color: var(--hijau);
+}
+
+.mynavbar {
+  background-color: rgb(255, 255, 255) !important;
+  padding: 0rem 5rem;
+}
+
+.mynavbar .navbar-brand {
+  font-family: "Ephesis", cursive;
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: var(--hijau);
+}
+
+.mynavbar .nav-link {
+  text-transform: uppercase;
+}
+
+.home,
+.info,
+.family,
+.gallery,
+.gifts {
+  background-image: url(img/bg.webp);
+  background-size: cover;
+  background-position: center;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  position: relative;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.home h5 {
+  font-style: italic;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.home p,
+.info p {
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  color: #252525;
+}
+
+.home .mempelai h1 {
+  font-size: 4rem;
+  font-family: "Ephesis", cursive;
+  font-weight: bold;
+  color: var(--hijau);
+  text-shadow: 0px 2px 2px rgba(78, 78, 78, 0.357);
+}
+
+.home .mempelai h2 {
+  font-family: "Ephesis", cursive;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.home .mempelai p {
+  margin-bottom: 2rem;
+}
+
+.info h2,
+.family h2,
+.gallery h2,
+.gifts h2 {
+  color: var(--hijau);
+  font-family: "Ephesis", cursive;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.info a {
+  color: #666;
+  background-color: #fff;
+  box-shadow: var(--shadow);
+}
+
+.info a:hover {
+  color: white;
+  background-color: var(--hijau);
+}
+
+.info .card {
+  background-color: #00000050 !important;
+  background-size: cover;
+  color: white !important;
+  letter-spacing: 0.1rem;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 10px 30px 30px 30px;
+}
+
+.info .card-header {
+  border-bottom: 1px solid #ffffff;
+  background-color: rgba(0, 0, 0, 0);
+  padding-bottom: 10px;
+}
+
+.info .card-body {
+  font-family: serif;
+  font-weight: 300;
+  float: left;
+}
+
+.info .card-body ul {
+  font-style: normal;
+}
+
+.info .btn {
+  border-radius: 5px;
+  padding: 1rem 2rem;
+}
+
+.family ul {
+  list-style: none;
+}
+
+.gifts p {
+  margin-bottom: 0px;
+}
+
+.gifts img {
+  width: 200px;
+  margin-left: 35px;
+  margin-bottom: 1rem;
+}
+
+footer {
+  padding: 2rem;
+  background-color: var(--hijau);
+  color: white;
+}
+
+footer a {
+  color: var(--bg);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.audio-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: rotating 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+section {
+  overflow: hidden;
+}
+
+@keyframes rotating {
+  form {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media Query */
+/* Laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 60px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 767px) {
+  html {
+    font-size: 72.5%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 50px;
+    margin: 5px;
+  }
+
+  .mynavbar .nav-link {
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .sticky-top {
+    overflow: hidden;
+  }
+
+  .info .card-body .pemisah {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Mobuile */
+@media (max-width: 576px) {
+  html {
+    font-size: 55%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 38px;
+    margin: 3px;
+  }
+
+  .hero h4,
+  .hero p,
+  .hero a,
+  .home h5,
+  .home p,
+  .info p,
+  .info .card-header,
+  .info span,
+  .gifts p,
+  .family h4 {
+    font-size: 2rem;
+  }
+
+  .info a,
+  .info .btn,
+  .family li {
+    font-size: 1.5rem;
+  }
+
+  .mempelai h1 {
+    font-size: 3rem;
+  }
+
+  .gallery {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .frame img {
+    width: 250px;
+  }
+}
+
+/* 360 */
+
+@media (max-width: 360px) {
+  html {
+    font-size: 40%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 20px;
+    margin: 3px;
+  }
+}
+
+/* 200 */
+@media (max-width: 277px) {
+  html {
+    font-size: 30%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 10px;
+    margin: 3px;
+  }
+}
